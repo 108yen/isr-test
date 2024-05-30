@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 
 export default function Timer({ date }: { date: Date }) {
-  const [time, setTime] = useState(0)
+  const [time, setTime] = useState(calcSeconds(date, new Date()))
 
   useEffect(() => {
     const id = setInterval(() => setTime(calcSeconds(date, new Date())), 1000)
