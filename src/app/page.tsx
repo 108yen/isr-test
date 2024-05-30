@@ -13,6 +13,9 @@ export default function Home() {
         <li>
           <Link href="/ssr">ssr</Link>
         </li>
+        <li>
+          <Link href="/dynamic-route/0">dynamic route</Link>
+        </li>
       </ul>
     </main>
   )
