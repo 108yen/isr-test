@@ -3,6 +3,7 @@ import Link from "next/link"
 export default function Home() {
   return (
     <main>
+      <Link href="https://github.com/108yen/isr-test">github</Link>
       <ul>
         <li>
           <Link href="/page-cache">page cache</Link>
