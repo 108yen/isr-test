@@ -2,8 +2,6 @@ import { Metadata } from "next"
 import Timer from "@/components/timer"
 import { unstable_cache } from "next/cache"
 
-export const revalidate = 0
-
 export const metadata: Metadata = {
   title: "unstable cache",
 }

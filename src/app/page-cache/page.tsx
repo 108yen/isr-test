@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   title: "page cache",
 }
 
-const cachedDate = cache(() => new Date())
+const cachedDate = cache(async () => new Date())
 
-export default function Page() {
-  const date = cachedDate()
+export default async function Page() {
+  const date = await cachedDate()
 
   return (
     <main>
