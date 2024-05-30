@@ -1,6 +1,6 @@
 import { cache } from "react"
-import Timer from "../components/timer"
 import { Metadata } from "next"
+import Timer from "@/components/timer"
 
 export const revalidate = 60
 
