@@ -10,6 +10,9 @@ export default function Home() {
         <li>
           <Link href="/unstable-cache">unstable cache</Link>
         </li>
+        <li>
+          <Link href="/ssr">ssr</Link>
+        </li>
       </ul>
     </main>
   )
