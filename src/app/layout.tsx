@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "ISR cache test",
-};
+}
 
 export default function RootLayout({
   children,
@@ -13,5 +13,5 @@ export default function RootLayout({
     <html lang="ja">
       <body>{children}</body>
     </html>
-  );
+  )
 }

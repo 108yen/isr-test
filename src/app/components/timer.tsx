@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
+"use client"
+import { useEffect, useState } from "react"
 
-export default function Timer() {
-  const [time, setTime] = useState(0);
+export default function Timer({ date }: { date: Date }) {
+  const [time, setTime] = useState(0)
 
   useEffect(() => {
-    const id = setInterval(() => setTime((t) => t + 1), 1000);
+    const id = setInterval(() => setTime(calcSeconds(date, new Date())), 1000)
 
-    return () => clearInterval(id);
-  }, []);
+    return () => clearInterval(id)
+  }, [date])
 
-  return <p>{time}</p>;
+  return <>{time}</>
+}
+
+function calcSeconds(start: Date, end: Date) {
+  return Math.round((end.getTime() - start.getTime()) / 1000)
 }
