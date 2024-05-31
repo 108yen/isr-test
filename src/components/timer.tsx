@@ -4,9 +4,8 @@ import { useEffect, useState } from "react"
 export default function Timer({ date }: { date: Date }) {
   const [time, setTime] = useState<number>()
 
-  useEffect(() => setTime(calcSeconds(date, new Date())), [date])
-
   useEffect(() => {
+    setTime(calcSeconds(date, new Date()))
     const id = setInterval(() => setTime(calcSeconds(date, new Date())), 1000)
 
     return () => clearInterval(id)
