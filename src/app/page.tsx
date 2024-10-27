@@ -20,6 +20,9 @@ export default function Home() {
         <li>
           <Link href="/static-route/0">static route</Link>
         </li>
+        <li>
+          <Link href="/prefetch-test">prefetch test</Link>
+        </li>
       </ul>
     </main>
   )
