@@ -24,6 +24,12 @@ export default function Home() {
           <Link href="/prefetch-test">prefetch test</Link>
         </li>
       </ul>
+
+      <ul>
+        <li>
+          <Link href="/env-test">environment test</Link>
+        </li>
+      </ul>
     </main>
   )
 }
