@@ -6,28 +6,16 @@ export default function Home() {
       <Link href="https://github.com/108yen/isr-test">github</Link>
       <ul>
         <li>
-          <Link href="/page-cache">page cache</Link>
+          <Link href="/dynamic-io/static">static component</Link>
         </li>
         <li>
-          <Link href="/unstable-cache">unstable cache</Link>
+          <Link href="/dynamic-io/dynamic/1">dynamic component 1</Link>
         </li>
         <li>
-          <Link href="/ssr">ssr</Link>
+          <Link href="/dynamic-io/dynamic/2">dynamic component 2</Link>
         </li>
         <li>
-          <Link href="/dynamic-route/0">dynamic route</Link>
-        </li>
-        <li>
-          <Link href="/static-route/0">static route</Link>
-        </li>
-        <li>
-          <Link href="/prefetch-test">prefetch test</Link>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <Link href="/env-test">environment test</Link>
+          <Link href="/dynamic-io/dynamic/3">dynamic component 3</Link>
         </li>
       </ul>
     </main>
