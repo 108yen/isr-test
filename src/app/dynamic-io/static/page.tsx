@@ -2,9 +2,9 @@ import { CachedComponent } from "@/components/cached-component"
 
 export default function Page() {
   return (
-    <div>
-      static page
+    <main>
+      <p>static page</p>
       <CachedComponent />
-    </div>
+    </main>
   )
 }

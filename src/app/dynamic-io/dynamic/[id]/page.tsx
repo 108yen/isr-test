@@ -8,9 +8,9 @@ export default async function Page({
   const { id } = await params
 
   return (
-    <div>
-      dynamic page id:{id}
+    <main>
+      <p>dynamic page id: {id}</p>
       <CachedComponent />
-    </div>
+    </main>
   )
 }
