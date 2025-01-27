@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    dynamicIO:true,
+    useCache:true
   }
-};
+}
 
-export default nextConfig;
+export default nextConfig
